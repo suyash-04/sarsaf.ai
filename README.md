@@ -1,6 +1,6 @@
 # SmartWaste - AI-Powered Waste Management Platform
 
-A comprehensive, affordable AI-powered waste management system designed for municipalities and local governments.
+A comprehensive, affordable AI-powered waste management system designed for municipalities and local governments. Built with Next.js 14 and powered by AI for intelligent waste classification and management.
 
 ## 🌟 Features
 
@@ -17,44 +17,46 @@ A comprehensive, affordable AI-powered waste management system designed for muni
 - **Multilingual Support**: Available in multiple languages
 - **Gamification**: Eco-points, achievements, and leaderboards to encourage participation
 
-### Technical Features
-- **Next.js 14**: App Router with server-side rendering
-- **AI Integration**: Ready for CNN model from `awareness-of-waste-recycling` folder
-- **Real-time Data**: Live updates and notifications
-- **Responsive Design**: Works seamlessly across all devices
+### Technical Stack
+- **Frontend**: Next.js 14 with App Router
+- **Styling**: Tailwind CSS with Glassmorphism design
+- **Package Manager**: pnpm for faster, more efficient dependency management
+- **AI Integration**: CNN model for waste classification
+- **Real-time Updates**: Live data synchronization
+- **Responsive Design**: Cross-device compatibility
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js 18+ 
-- npm or yarn
-- Pre-trained CNN model in `awareness-of-waste-recycling` folder
+- pnpm (Install with `npm install -g pnpm`)
+- Git
 
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone <repository-url>
-   cd smartwaste-platform
-   \`\`\`
+   ```bash
+   git clone https://github.com/yourusername/sarsaf.ai.git
+   cd sarsaf.ai
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
-   npm install
-   \`\`\`
+   ```bash
+   pnpm install
+   ```
 
 3. **Set up environment variables**
-   \`\`\`bash
+   ```bash
    cp .env.example .env.local
-   \`\`\`
+   ```
    
-   Configure the following variables:
-   \`\`\`env
+   Configure the following variables in `.env.local`:
+   ```env
    # Database
    DATABASE_URL="your-database-url"
    
    # AI Model
-   MODEL_PATH="./awareness-of-waste-recycling"
+   MODEL_PATH="./model"
    
    # Email Alerts
    SMTP_HOST="your-smtp-host"
@@ -65,18 +67,64 @@ A comprehensive, affordable AI-powered waste management system designed for muni
    MAPS_API_KEY="your-maps-api-key"
    TWILIO_SID="your-twilio-sid"
    TWILIO_TOKEN="your-twilio-token"
-   \`\`\`
+   ```
 
-4. **Run the development server**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
+4. **Start the development server**
+   ```bash
+   pnpm dev
+   ```
 
 5. **Open your browser**
    Navigate to `http://localhost:3000`
 
 ## 📁 Project Structure
 
-\`\`\`
-smartwaste-platform/
-├
+```
+sarsaf.ai/
+├── app/              # Next.js app directory
+├── components/       # Reusable UI components
+├── hooks/           # Custom React hooks
+├── lib/             # Utility functions and configurations
+├── model/           # AI model and related files
+├── public/          # Static assets
+└── styles/          # Global styles and Tailwind config
+```
+
+## 🛠️ Development
+
+### Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm format` - Format code with Prettier
+
+### Code Style
+
+This project uses:
+- ESLint for code linting
+- Prettier for code formatting
+- TypeScript for type safety
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- All contributors who have helped shape this project
+
+## 📞 Support
+
+For support, email support@sarsaf.ai or open an issue in the repository.
